@@ -1,7 +1,5 @@
 package com.example.demo.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +31,7 @@ public class CidadeService {
 	public void clear() {
 		cidadeRepository.deleteAll();
 	}
-	public List<Cidade> buscarTodasCidades() {
-		return cidadeRepository.findAll();
+	public void apagarCidadePorId(String nome) {
+		
 	}
 }
